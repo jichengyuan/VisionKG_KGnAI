@@ -69,7 +69,7 @@ def check_instances_categories(file, annotations, class_names):
 def save_coco(file, images, annotations, categories):
     check_instances_categories(file, annotations, [category['name'] for category in categories])
     with open(file, 'wt') as coco:
-        json.dump({'images': images, 'annotations': annotations, 'categories': categories}, coco, indent=2,
+        json.dump({'images': images, 'info': "KGnAI_Datasets", 'annotations': annotations, 'categories': categories}, coco, indent=2,
                   sort_keys=False)
 
 
