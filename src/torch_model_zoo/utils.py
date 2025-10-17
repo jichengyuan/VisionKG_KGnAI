@@ -160,6 +160,7 @@ def check_anno_index(path_to_anno):
             annotation['category_id'] += 1
     anno_sorted_index = {
         "images": anno['images'],
+        "info": "KG_Datasets",
         "annotations": annotations,
         "categories": categories
     }
