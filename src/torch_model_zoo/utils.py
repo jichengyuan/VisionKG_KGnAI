@@ -211,6 +211,7 @@ def anno_filter(anno_path, filter_cat_nms):
         anno['category_id'] = coco_labels_inverse[anno['category_id']]
 
     filter_annos = {"images": images_info,
+    				"info": "KGnAI_Datasets",
                     "annotations": annotations_info,
                     "categories": categoreis_info}
     return filter_annos
